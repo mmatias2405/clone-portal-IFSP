@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ADS - IFSP - Pirituba</title>
+<link rel="stylesheet" href="css/ads.css">
+<script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+<script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+<script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+<script type="text/babel" defer >
+class Discipilina{
+  constructor(nome, carga, periodo){
+    this.nome = nome;
+    this.carga = carga;
+    this.perido = periodo;
+  }
+}
+class Header extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      disciplina1: new Discipilina("Sistemas Operacionais", 66.7, "Noturno"),
+      disciplina2: new Discipilina("Inglês", 33.3, "Noturno"),
+      disciplina3: new Discipilina("Laboratório de Estruturas de Dados e Programação", 	33.3, "Noturno"),
+      disciplina4: new Discipilina("Introdução a Banco de Dados", 66.7, "Noturno"),
+    };
+  }
+  render() {
+    return (
+      <div>
+        <h2> Componentes curriculares </h2>
+        <table id="disciplina">
+          <tr>
+            <th>DISCIPLINA</th>
+            <th>CARGA</th>
+            <th>PERIODO</th>
+          </tr>
+          <tr>
+            <td>{this.state.disciplina1.nome}</td>
+            <td>{this.state.disciplina1.carga}</td>
+            <td>{this.state.disciplina1.perido}</td>
+          </tr>
+          <tr>
+            <td>{this.state.disciplina2.nome}</td>
+            <td>{this.state.disciplina2.carga}</td>
+            <td>{this.state.disciplina2.perido}</td>
+          </tr>
+          <tr>
+            <td>{this.state.disciplina3.nome}</td>
+            <td>{this.state.disciplina3.carga}</td>
+            <td>{this.state.disciplina3.perido}</td>
+          </tr>
+          <tr>
+            <td>{this.state.disciplina4.nome}</td>
+            <td>{this.state.disciplina4.carga}</td>
+            <td>{this.state.disciplina4.perido}</td>
+          </tr>
+        </table>
+      </div>
+    );
+  }
+}
+ReactDOM.render(<Header />, document.getElementById('componenteCurricular'))
+</script>
+</head>
+<body>
+
+<header id="cabecalho"> <!-- Indica o cabeçalho do nosso documento-->
+  <nav>
+    <object width="100%" height="200px" data="menu.html"></object>
+  </nav> 
+  
+  
+</header>
+
+<main>
+  <h1><strong>Tecnologia em Análise e Desenvolvimento de Sistemas</strong></h1>
+  <br>
+  <em>Objetivo Geral:</em>
+  <br>
+  O curso de Análise e Desenvolvimento de Sistemas do câmpus São Paulo Pirituba tem como objetivo capacitar o egresso a atuar na área de Tecnologia de Informação (TI) em atividades como análise, projeto, desenvolvimento, gerenciamento e implantação de sistemas de informação computacionais. Essa capacitação é pautada pela valorização da prática e competências técnicas, tanto em análise quanto em desenvolvimento, e pela atualização diante da realidade tecnológica, de modo que o profissional seja um mediador competente entre o desenvolvimento tecnológico e a sociedade em que se insere.
+  <div align=center id="componenteCurricular">
+
+  </div>
+</main>
+
+<footer>     
+  <object width="100%" height="200px" data="rodape.html"></object>
+</footer>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+#componenteCurricular{
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  #disciplina {
+    width: 100%;
+  }
+
+  #disciplina td, #disciplina th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  #disciplina tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #disciplina tr:hover {background-color: #ddd;}
+  
+  #disciplina th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #4CAF50;
+    color: white;
+  }

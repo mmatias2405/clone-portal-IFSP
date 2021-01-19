@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+#conteudo {
+		width: 100%;
+		float: right;		
+		}
+		
+
+aside p {
+	text-align: center;
+}
+
+h1{
+	text-align: center;
+}
+
+.grid-container > div img{
+    width: 50%;
+}
+.grid-container {
+    margin: 20px;
+    display:grid;
+    grid-template-columns: auto auto;
+    grid-row: auto auto auto auto auto;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+  }
+  
+.imagem{
+    display:flex;
+    align-items:baseline;
+    justify-content:center;
+}
+.legenda{
+    display: block;
+    line-height: 1.2;
+    font-size: 13.28px;
+    text-align: center;
+    align-items:baseline;
+    justify-content:center; 
+}
+
+
+
+
+

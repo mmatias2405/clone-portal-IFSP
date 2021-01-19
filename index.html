@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="UTF-8"> <!-- configura a codificação de caracteres do navegador para o UTF-8-->
+  <link rel="shortcut icon" href="Imagens/favicon.ico" type="image/x-icon"> <!-- Adiciona o ícone de aba de navegador-->
+  <link rel="stylesheet" href="css/conteudo.css">
+  <link rel="stylesheet" href="css/slideshow.css">
+  <!--link rel="stylesheet" href="css/menulateral.css"-->   
+  <title>HOME - IFSP - Pirituba</title> <!-- Adiciona o título na aba do navegador-->
+
+<script src="js/disabling.js"></script>
+<script src="js/script.js"></script>
+
+</head>
+
+<body onload="showSlides(1)">
+
+<header id="cabecalho"> <!-- Indica o cabeçalho do nosso documento-->
+  
+  <nav>
+    <object width="100%" height="200px" data="menu.html"></object>    
+  </nav>    
+  
+</header>
+
+<main id="conteudo"> 
+
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 4</div>
+    <img src="Imagens/A.png" style="width:100%">
+    <div class="text">Caption Text</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 4</div>
+    <img src="Imagens/B.jpg" style="width:100%">
+    <div class="text">Caption Two</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 4</div>
+    <img src="Imagens/C.jpg" style="width:100%">
+    <div class="text">Caption Three</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 4</div>
+    <section>
+      <h1>
+        Conheça os desafios de inovação
+      </h1>
+      <div class="videoWrapper">
+        <p align="center">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/5g5LQe3m8Po" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </p>
+      </div>			
+      </section>
+    <div class="text">Caption Four</div>
+    
+  </div>
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+</div>
+
+<div class="grid-container">
+  <div class="imagem">
+      <img src="Imagens/eleicoes.jpg"
+        alt="eleições">
+  </div>
+  <div class="imagem">
+    <img src="Imagens/snct.jpg"
+      alt="eleições">
+  </div>
+  <div class="legenda">
+    <p><b>Radar IFSP: informe-se sobre as eleições do dia 13 de outubro</b></br>
+    Todos os alunos e servidores podem votar; acesse aqui a cabine de votação online do seu câmpus</p>
+  </div>
+  <div class="legenda">
+    <p><b>IFSP: SNCT reúne atividades entre 19 e 24 de outubro</b></br>
+      Programação reunirá iniciativas para aproximar pesquisadores e atividades culturais</p>
+  </div> 
+  <div class="imagem">
+    <img src="Imagens/residencia.png"
+      alt="eleições">
+  </div>
+  <div class="imagem">
+    <img src="Imagens/maratona.jpeg"
+      alt="eleições">
+  </div>
+  <div class="legenda">
+    <p><b>IFSP oferece bolsa aos voluntários da Residência Pedagógica</b></br>
+      Bolsa de R$ 400,00 será paga pelo período de três meses</p>
+  </div>
+  <div class="legenda">
+    <p><b>Inscrições abertas para a III Maratona InterIF</b></br>
+      Maratona de programação do IFSP será realizada online, no dia 31 de outubro; inscrições até 26 de outubro</p>
+  </div>  
+  
+</div>
+
+</main>
+
+<footer>
+<br><br> 
+<object width="100%" height="200px" data="rodape.html"></object>
+
+</footer>
+
+
+</body>
+</html>
